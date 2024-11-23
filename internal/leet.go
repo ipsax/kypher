@@ -10,11 +10,11 @@ type Leet struct{}
 func leetIterator() {
 	var a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z []string
 	a = append(a, "a", "4", "/", `\`, `@`, "/-", "^", "(L", "Д")
-	b = append(b, "b")
-	c = append(c, "c")
-	d = append(d, "d")
-	e = append(e, "e")
-	f = append(f, "f")
+	b = append(b, "b", "I3", "8", "13", "|3", "ß", "!3", "(3", "/3", ")3", "|-]", "j3")
+	c = append(c, "c", "[", "¢", "<", "(", "©")
+	d = append(d, "d", ")", "|)", "(|", "[)", "I>", "|", ">", "?", "T)", "I7", "cl", "|}", "|]")
+	e = append(e, "e", "3", "&", "£", "€", "[-", "|", "=-")
+	f = append(f, "f", "|", "=", "ƒ", "#", "ph", "/", "=", "v")
 	g = append(g, "g")
 	h = append(h, "h")
 	i = append(i, "i")
