@@ -15,6 +15,6 @@ var leetCmd = &cobra.Command{
 	Long:  `This is kypher's leet cipher`,
 	Run: func(cmd *cobra.Command, args []string) {
 		leet := internal.Leet{}
-		leet.Encode("todo, take cli args for encode or decode, maybe add autodetect for cipher type eventually?")
+		leet.Encode("todo, take cli args for encode or decode, maybe add autodetect for autodecode eventually?")
 	},
 }
