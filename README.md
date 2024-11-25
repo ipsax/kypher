@@ -16,6 +16,8 @@
 
     ```bash
     ./kypher leet --encode "I can't understand your writing, it's confusing"
+    # use the help flag for more info:
+    # ./kypher -h
     ```
 
 ### Cipher Styles
