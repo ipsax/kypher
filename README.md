@@ -1,8 +1,24 @@
 # Kypher
 
-🚧 Work in progress 🚧 
+🚧 Work in progress 🚧
 
-## Cipher Styles
+## Usage
+
+1. Build the app
+
+    ```bash
+    git clone https://github.com/ipsax/kypher.git
+    cd kypher
+    go build .
+    ```
+
+2. Use the app
+
+    ```bash
+    ./kypher leet --encode "I can't understand your writing, it's confusing"
+    ```
+
+### Cipher Styles
 
 Rune Cipher
 
@@ -12,8 +28,8 @@ Rune Cipher
 
 ---
 
-1337 Cipher 
+Leet Cipher
 
 ```txt
-/\//|3[- T)3y3|][|} (-)\|3 ©[zL|§(-) ()\/ \|/()|_|
+I <4И'«|» L|^/|}€4s~/[\]) ¥Øulz ω|2it|{\}{,, i†'s ¢Ønvuzeye\/gee
 ```

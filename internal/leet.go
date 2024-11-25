@@ -81,6 +81,8 @@ func (Leet) Encode(str string) string {
 		if exists {
 			selectedLeet := chars[randRange(0, len(chars))]
 			encoded += selectedLeet
+		} else {
+			encoded += string(c)
 		}
 	}
 	return encoded
