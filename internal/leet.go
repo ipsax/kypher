@@ -1,13 +1,13 @@
 package internal
 
 import (
-	"fmt"
+	"math/rand"
 )
 
 type Leet struct{}
 
 // todo make type for leetchars = https://en.wikipedia.org/wiki/Leet#Orthography
-func leetIterator() {
+func leetMap() map[string][]string {
 	var a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z []string
 	a = append(a, "a", "4", "/", `\`, `@`, "/-", "^", "(L", "Д")
 	b = append(b, "b", "I3", "8", "13", "|3", "ß", "!3", "(3", "/3", ")3", "|-]", "j3")
@@ -64,12 +64,26 @@ func leetIterator() {
 	leetChars["y"] = y
 	leetChars["z"] = z
 
-	fmt.Println(leetChars)
+	return leetChars
+}
+
+func randRange(min, max int) int {
+	return rand.Intn(max-min) + min
 }
 
 func (Leet) Encode(str string) string {
-	leetIterator()
-	return "todo return str->leet cipher"
+	encoded := ""
+	leetChars := leetMap()
+
+	for _, c := range str {
+		// todo ignore chars that arent a-z
+		chars, exists := leetChars[string(c)]
+		if exists {
+			selectedLeet := chars[randRange(0, len(chars))]
+			encoded += selectedLeet
+		}
+	}
+	return encoded
 }
 
 func (Leet) Decode(str string) string {
