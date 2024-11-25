@@ -6,7 +6,7 @@ import (
 
 type Leet struct{}
 
-// todo make type for leetchars = https://en.wikipedia.org/wiki/Leet#Orthography
+// https://en.wikipedia.org/wiki/Leet#Orthography
 func leetMap() map[string][]string {
 	var a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z []string
 	a = append(a, "a", "4", "/", `\`, `@`, "/-", "^", "(L", "Д")
@@ -76,7 +76,6 @@ func (Leet) Encode(str string) string {
 	leetChars := leetMap()
 
 	for _, c := range str {
-		// todo ignore chars that arent a-z
 		chars, exists := leetChars[string(c)]
 		if exists {
 			selectedLeet := chars[randRange(0, len(chars))]
