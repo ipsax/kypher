@@ -2,6 +2,7 @@ package internal
 
 import (
 	"math/rand"
+	"unicode"
 )
 
 type Leet struct{}
@@ -76,6 +77,7 @@ func (Leet) Encode(str string) string {
 	leetChars := leetMap()
 
 	for _, c := range str {
+		c := unicode.To(unicode.LowerCase, c)
 		chars, exists := leetChars[string(c)]
 		if exists {
 			selectedLeet := chars[randRange(0, len(chars))]
